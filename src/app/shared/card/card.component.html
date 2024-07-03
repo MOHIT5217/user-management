@@ -1,0 +1,23 @@
+<p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000"
+    rejectButtonStyleClass="p-button-text"></p-confirmDialog>
+<p-card class="p-ml-2 p-mb-2" [header]="user.name" *ngFor="let user of userData; index as i" [subheader]="'@'+user.username"
+    [style]="{ width: width }">
+    <ng-template pTemplate="header">
+        <a [routerLink]="['user_detail', user.id]" routerLinkActive="router-link-active" >
+            <img alt="Card" [ngStyle]="{'height': '250px', 'object-fit': 'cover'}" [src]="user.thumbImg" />
+        </a>
+    </ng-template>
+    <p>
+        Email - ({{user.email}})
+    </p>
+    <ng-template pTemplate="footer">
+        <div class="flex gap-3 mt-1">
+            <p-button label="Edit" [routerLink]="['edit_user', user.id]" icon="pi pi-check"
+                styleClass="p-button-sm p-button-warning"></p-button>
+            <p-button label="View" [routerLink]="['user_detail', user.id]" routerLinkActive="router-link-active"
+                icon="pi pi-eye" styleClass="p-button-sm p-button-success" [style]="{'margin-left': '.5em'}"></p-button>
+            <p-button label="Delete" (click)="confirm1(user.id)" icon="pi pi-times"
+                styleClass="p-button-sm p-button-danger" [style]="{'margin-left': '.5em'}"></p-button>
+        </div>
+    </ng-template>
+</p-card>

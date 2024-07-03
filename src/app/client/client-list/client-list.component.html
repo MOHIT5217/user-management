@@ -1,0 +1,21 @@
+<div class="p-my-5">
+    <div class="p-field p-grid">
+        <div class=" p-col-12">
+            <div class="p-d-md-flex p-d-flex-reverse  p-jc-between">
+                <div class="p-d-flex p-ai-center">
+                    <label for="search">Search : &nbsp;</label>
+                    <input id="search" placeholder="Search User ID" #searchInput pInputText name="search">
+                </div>
+                <h1>User List</h1>
+                <div class="p-d-flex p-ai-center">
+                    <p-dropdown [options]="sortBy" [(ngModel)]="shortedBy" (onChange)="sortedData()"
+                        placeholder="Sort by" optionValue="value" optionLabel="label" [showClear]="true">
+                    </p-dropdown>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-card class="p-d-flex p-flex-wrap p-jc-center" (userId)="deleteUser($event)" [userData]="users"
+        [width]="'320px'">
+    </app-card>
+</div>

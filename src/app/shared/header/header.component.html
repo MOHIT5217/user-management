@@ -1,0 +1,9 @@
+<p-menubar [model]="items">
+    <ng-template pTemplate="start">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmcmNgkBOcwVqQESAs0wvss45UoAtHU8Eqow&s" height="80" alt="logo">
+    </ng-template>
+    <ng-template pTemplate="end">
+        <button pButton icon="pi pi-user" [routerLink]="['client']" class="p-button-rounded p-button-secondary p-mr-2"></button>
+        <button pButton icon="pi pi-plus" [routerLink]="['/client/add_user']" label="Add New User" class="p-button-rounded p-button-secondary"></button>
+    </ng-template>
+</p-menubar>

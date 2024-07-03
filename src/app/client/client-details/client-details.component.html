@@ -1,0 +1,38 @@
+<div *ngIf="user">
+    <p-card header="User Information" styleClass="p-mb-3">
+        <div class="p-d-flex p-jc-between p-ai-center">
+            <div>
+                <h2>{{ user.name }} <small>({{ user.username }})</small></h2>
+                <p><i class="pi pi-envelope p-mr-2"></i>Email: {{ user.email }}</p>
+                <p><i class="pi pi-phone p-mr-2"></i>Phone: {{ user.phone }}</p>
+                <p><i class="pi pi-globe p-mr-2"></i>Website: <a href="http://{{ user.website }}" target="_blank">{{
+                        user.website }}</a></p>
+            </div>
+            <div class="userImage">
+                <img [src]="user.thumbImg" [alt]="user.name">
+            </div>
+        </div>
+    </p-card>
+
+    <p-panel header="Address" styleClass="p-mb-3">
+        <div class="p-d-flex p-ai-center">
+            <i class="pi pi-map-marker p-mr-2" style="font-size: 2em;"></i>
+            <div>
+                <p>{{ user.address.street }}, {{ user.address.suite }}</p>
+                <p>{{ user.address.city }}, {{ user.address.zipcode }}</p>
+                <p>Geo: {{ user.address.geo.lat }}, {{ user.address.geo.lng }}</p>
+            </div>
+        </div>
+    </p-panel>
+
+    <p-panel header="Company">
+        <div class="p-d-flex p-ai-center">
+            <i class="pi pi-building p-mr-2" style="font-size: 2em;"></i>
+            <div>
+                <h3>{{ user.company.name }}</h3>
+                <p>{{ user.company.catchPhrase }}</p>
+                <p>{{ user.company.bs }}</p>
+            </div>
+        </div>
+    </p-panel>
+</div>

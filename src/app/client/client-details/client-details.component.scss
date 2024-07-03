@@ -1,0 +1,29 @@
+.p-card {
+    margin-bottom: 20px;
+}
+
+.p-panel {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.userImage{
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    img{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    @media(min-width:800px){
+
+    }
+}

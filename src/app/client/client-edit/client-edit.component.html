@@ -1,0 +1,110 @@
+<div class="p-grid p-jc-center p-my-5">
+    <div class="p-col-12 p-md-6" *ngIf="editForm">
+        <h1 class="p-text-center p-mb-5">Edit Form</h1>
+        <div [formGroup]="editForm">
+            <div class="p-fluid p-formgrid p-grid">
+                <!-- Name -->
+                <div class="p-field p-col-12 p-md-6">
+                    <label for="name">Name</label>
+                    <input id="name" pInputText formControlName="name">
+                </div>
+    
+                <!-- Username -->
+                <div class="p-field p-col-12 p-md-6">
+                    <label for="username">Username</label>
+                    <input id="username" pInputText formControlName="username">
+                </div>
+    
+                <!-- Email -->
+                <div class="p-field p-col-12 p-md-6">
+                    <label for="email">Email</label>
+                    <input id="email" pInputText formControlName="email">
+                </div>
+
+                <!-- ThumbImg -->
+                <div class="p-field p-col-12 p-md-6">
+                    <label for="thumbImg">Image Url</label>
+                    <input id="thumbImg" pInputText formControlName="thumbImg">
+                </div>
+    
+                <!-- Address -->
+                <div formGroupName="address" class="p-col-12">
+                    <div class="p-field p-grid">
+                        <label for="street" class="p-col-12 p-md-2">Street</label>
+                        <div class="p-col-12 p-md-10">
+                            <input id="street" pInputText formControlName="street">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="suite" class="p-col-12 p-md-2">Suite</label>
+                        <div class="p-col-12 p-md-10">
+                            <input id="suite" pInputText formControlName="suite">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="city" class="p-col-12 p-md-2">City</label>
+                        <div class="p-col-12 p-md-10">
+                            <input id="city" pInputText formControlName="city">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="zipcode" class="p-col-12 p-md-2">Zipcode</label>
+                        <div class="p-col-12 p-md-10">
+                            <input id="zipcode" pInputText formControlName="zipcode">
+                        </div>
+                    </div>
+                    <!-- Geo -->
+                    <div formGroupName="geo" class="p-grid">
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="lat">Latitude</label>
+                            <input id="lat" pInputText formControlName="lat">
+                        </div>
+                        <div class="p-field p-col-12 p-md-6">
+                            <label for="lng">Longitude</label>
+                            <input id="lng" pInputText formControlName="lng">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Phone -->
+                <div class="p-field p-col-12 p-md-6">
+                    <label for="phone">Phone</label>
+                    <input id="phone" pInputText formControlName="phone">
+                </div>
+    
+                <!-- Website -->
+                <div class="p-field p-col-12 p-md-6">
+                    <label for="website">Website</label>
+                    <input id="website" pInputText formControlName="website">
+                </div>
+    
+                <!-- Company -->
+                <div formGroupName="company" class="p-col-12">
+                    <div class="p-field p-grid">
+                        <label for="companyName" class="p-col-12 p-md-2">Company Name</label>
+                        <div class="p-col-12 p-md-10">
+                            <input id="companyName" pInputText formControlName="name">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="catchPhrase" class="p-col-12 p-md-2">Catch Phrase</label>
+                        <div class="p-col-12 p-md-10">
+                            <input id="catchPhrase" pInputText formControlName="catchPhrase">
+                        </div>
+                    </div>
+                    <div class="p-field p-grid">
+                        <label for="bs" class="p-col-12 p-md-2">BS</label>
+                        <div class="p-col-12 p-md-10">
+                            <input id="bs" pInputText formControlName="bs">
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="p-field p-col-12">
+                    <button pButton type="button" label="Submit" (click)="onSubmit()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,220 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Leanne Graham",
+      "thumbImg": "https://images.unsplash.com/photo-1527631746610-bca00a040d60?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Mohit Maheshwari",
+      "thumbImg": "https://media.istockphoto.com/id/1093088202/photo/a-girl-walking-in-streets-of-trogir.webp?s=170667a&w=0&k=20&c=o-PW0l5aZtE0oJENuTwu8ujJ9r6eoo6zJGWeknR9fzk=",
+      "username": "Samantha",
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "street": "Douglas Extension",
+        "suite": "Suite 847",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157",
+        "geo": {
+          "lat": "-68.6102",
+          "lng": "-47.0653"
+        }
+      },
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Face to face bifurcated interface",
+        "bs": "e-enable strategic applications"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Patricia Lebsack",
+      "thumbImg": "https://media.istockphoto.com/id/1829913540/photo/young-woman-walking-in-the-narrow-stone-paved-alley-between-buildings-venice-italy.webp?s=170667a&w=0&k=20&c=axdVF3XeEG1cCZRW7D_ikVnuGFAmp6_xL_lQJIydGSQ=",
+      "username": "Karianne",
+      "email": "Julianne.OConner@kory.org",
+      "address": {
+        "street": "Hoeger Mall",
+        "suite": "Apt. 692",
+        "city": "South Elvis",
+        "zipcode": "53919-4257",
+        "geo": {
+          "lat": "29.4572",
+          "lng": "-164.2990"
+        }
+      },
+      "phone": "493-170-9623 x156",
+      "website": "kale.biz",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Multi-tiered zero tolerance productivity",
+        "bs": "transition cutting-edge web services"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Chelsey Dietrich",
+      "thumbImg": "https://plus.unsplash.com/premium_photo-1674327105076-3fb5a725bbc8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHx8",
+      "username": "Kamren",
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": {
+        "street": "Skiles Walks",
+        "suite": "Suite 351",
+        "city": "Roscoeview",
+        "zipcode": "33263",
+        "geo": {
+          "lat": "-31.8129",
+          "lng": "62.5342"
+        }
+      },
+      "phone": "(254)954-1289",
+      "website": "demarco.info",
+      "company": {
+        "name": "Keebler LLC",
+        "catchPhrase": "User-centric fault-tolerant solution",
+        "bs": "revolutionize end-to-end systems"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Mrs. Dennis Schulist",
+      "thumbImg": "https://images.unsplash.com/photo-1527706973790-84878252edc0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
+      "username": "Leopoldo_Corkery",
+      "email": "Karley_Dach@jasper.info",
+      "address": {
+        "street": "Norberto Crossing",
+        "suite": "Apt. 950",
+        "city": "South Christy",
+        "zipcode": "23505-1337",
+        "geo": {
+          "lat": "-71.4197",
+          "lng": "71.7478"
+        }
+      },
+      "phone": "1-477-935-8478 x6430",
+      "website": "ola.org",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Synchronised bottom-line interface",
+        "bs": "e-enable innovative applications"
+      }
+    },
+    {
+      "id": "7",
+      "name": "Kurtis Weissnat",
+      "thumbImg": "https://images.unsplash.com/photo-1522010675502-c7b3888985f6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D",
+      "username": "Elwyn.Skiles",
+      "email": "Telly.Hoeger@billy.biz",
+      "address": {
+        "street": "Rex Trail",
+        "suite": "Suite 280",
+        "city": "Howemouth",
+        "zipcode": "58804-1099",
+        "geo": {
+          "lat": "24.8918",
+          "lng": "21.8984"
+        }
+      },
+      "phone": "210.067.6132",
+      "website": "elvis.io",
+      "company": {
+        "name": "Johns Group",
+        "catchPhrase": "Configurable multimedia task-force",
+        "bs": "generate enterprise e-tailers"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Nicholas Runolfsdottir V",
+      "thumbImg": "https://media.istockphoto.com/id/1198086928/photo/artificial-intelligence.jpg?s=612x612&w=0&k=20&c=golXSzeEz8J4RlHZX8ZdZRJWgreCPhTVS5RmIxypMK4=",
+      "username": "Maxime_Nienow",
+      "email": "Sherwood@rosamond.me",
+      "address": {
+        "street": "Ellsworth Summit",
+        "suite": "Suite 729",
+        "city": "Aliyaview",
+        "zipcode": "45169",
+        "geo": {
+          "lat": "-14.3990",
+          "lng": "-120.7677"
+        }
+      },
+      "phone": "586.493.6943 x140",
+      "website": "jacynthe.com",
+      "company": {
+        "name": "Abernathy Group",
+        "catchPhrase": "Implemented secondary concept",
+        "bs": "e-enable extensible e-tailers"
+      }
+    },
+    {
+      "id": "9",
+      "name": "Glenna Reichert",
+      "thumbImg": "https://media.istockphoto.com/id/1149296689/photo/group-of-people-screaming-in-megaphones-at-annoyed-businessman.jpg?s=612x612&w=0&k=20&c=4xqiytJUMESPn2kC4YbK9vxABpOJ9fivdkh2NgtOX6M=",
+      "username": "Delphine",
+      "email": "Chaim_McDermott@dana.io",
+      "address": {
+        "street": "Dayna Park",
+        "suite": "Suite 449",
+        "city": "Bartholomebury",
+        "zipcode": "76495-3109",
+        "geo": {
+          "lat": "24.6463",
+          "lng": "-168.8889"
+        }
+      },
+      "phone": "(775)976-6794 x41206",
+      "website": "conrad.com",
+      "company": {
+        "name": "Yost and Sons",
+        "catchPhrase": "Switchable contextually-based project",
+        "bs": "aggregate real-time technologies"
+      }
+    },
+    {
+      "id": "dfd5",
+      "name": "Alex",
+      "username": "Alex123",
+      "thumbImg": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFrZSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D",
+      "email": "alex@email.com",
+      "address": {
+        "street": "street1",
+        "suite": "unknow",
+        "city": "London",
+        "zipcode": "23434",
+        "geo": {
+          "lat": "23323",
+          "lng": "434343"
+        }
+      },
+      "phone": "232343243",
+      "website": "http://test.com",
+      "company": {
+        "name": "Own",
+        "catchPhrase": "tesr",
+        "bs": "dsfsf"
+      }
+    }
+  ]
+}
