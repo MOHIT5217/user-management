@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { debounceTime, distinctUntilChanged } from 'rxjs/operators';
 import { IUser } from 'src/app/interface/user';
 import { ApiService } from 'src/app/services/api.service';
 import { DataService } from 'src/app/shared/data.service';
@@ -15,6 +16,7 @@ export class ClientEditComponent implements OnInit {
   editForm!: FormGroup;
   user!: IUser;
   userId!: string;
+  initialFormValue: any;
 
   constructor(
     private activatedroute: ActivatedRoute,
@@ -66,6 +68,8 @@ export class ClientEditComponent implements OnInit {
       )
     });
     this.editForm.setValue(user);
+    // Store the initial form value for comparison
+    this.initialFormValue = this.editForm.value;
   }
 
   getAddressControls() {
@@ -76,23 +80,37 @@ export class ClientEditComponent implements OnInit {
     return (this.editForm.get('address.geo') as FormGroup).controls;
   }
 
-  onSubmit() {
+  onSubmit(event: Event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+     // Compare current form value with the initial value
+    if (JSON.stringify(this.editForm.value) === JSON.stringify(this.initialFormValue)) {
+      console.log('No changes detected, form will not be submitted.');
+      this.dataService.openSnackBar("No changes detected, form will not be submitted.");
+      return;
+    }
     const obj = this.editForm.value;
-    if(this.editForm.valid){
-      this.apiservice.editUser(obj, this.userId).subscribe(res => {
-        console.log(res, "edit");
-      },
-        err => {
-          console.log(err);
-  
-        },
-        () => {
-          this.dataService.openSnackBar("User Edit Successfully");
-          this.router.navigateByUrl('/client');
-        });
-    }else{
+    if (this.editForm.valid) {
+      setTimeout(() => {
+        this.apiservice.editUser(obj, this.userId).pipe(
+          debounceTime(1000), // Add delay
+          distinctUntilChanged() // Ensure the changes are distinct
+        ).subscribe(
+          res => {
+            console.log(res, "edit");
+          },
+          err => {
+            console.log(err);
+          },
+          () => {
+            this.dataService.openSnackBar("User Edit Successfully");
+            this.router.navigateByUrl('/client');
+          }
+        );
+      }, 1000); // Delay in milliseconds (e.g., 1000ms = 1 second)
+    } else {
       this.editForm.markAllAsTouched();
     }
   }
+  
 
 }

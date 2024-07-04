@@ -7,24 +7,28 @@
                 <div class="p-field p-col-12 p-md-6">
                     <label for="name">Name</label>
                     <input id="name" pInputText formControlName="name">
+                    <small class="error" *ngIf="this.newuser.get('name')?.invalid&&this.newuser.get('name')?.touched">Enter your name</small>
                 </div>
     
                 <!-- Username -->
                 <div class="p-field p-col-12 p-md-6">
                     <label for="username">Username</label>
                     <input id="username" pInputText formControlName="username">
+                    <small class="error" *ngIf="this.newuser.get('username')?.invalid&&this.newuser.get('username')?.touched">Enter your username</small>
                 </div>
     
                 <!-- Email -->
                 <div class="p-field p-col-12 p-md-6">
                     <label for="email">Email</label>
                     <input id="email" pInputText formControlName="email">
+                    <small class="error" *ngIf="this.newuser.get('email')?.invalid&&this.newuser.get('email')?.touched">Enter your email</small>
                 </div>
 
                 <!-- ThumbImg -->
                 <div class="p-field p-col-12 p-md-6">
                     <label for="thumbImg">Image Url</label>
                     <input id="thumbImg" pInputText formControlName="thumbImg">
+                    <small class="error" *ngIf="this.newuser.get('thumbImg')?.invalid&&this.newuser.get('thumbImg')?.touched">Enter your thumbImg</small>
                 </div>
     
                 <!-- Address -->
@@ -45,6 +49,7 @@
                         <label for="city" class="p-col-12 p-md-2">City</label>
                         <div class="p-col-12 p-md-10">
                             <input id="city" pInputText formControlName="city">
+                            <small class="error" *ngIf="this.newuser.get('address.city')?.invalid&&this.newuser.get('address.city')?.touched">Enter your city</small>
                         </div>
                     </div>
                     <div class="p-field p-grid">
@@ -70,6 +75,7 @@
                 <div class="p-field p-col-12 p-md-6">
                     <label for="phone">Phone</label>
                     <input id="phone" pInputText formControlName="phone">
+                    <small class="error" *ngIf="this.newuser.get('phone')?.invalid&&this.newuser.get('phone')?.touched">Enter your phone number</small>
                 </div>
     
                 <!-- Website -->
@@ -84,6 +90,7 @@
                         <label for="companyName" class="p-col-12 p-md-2">Company Name</label>
                         <div class="p-col-12 p-md-10">
                             <input id="companyName" pInputText formControlName="name">
+                            <small class="error" *ngIf="this.newuser.get('company.name')?.invalid&&this.newuser.get('company.name')?.touched">Enter your Company Name</small>
                         </div>
                     </div>
                     <div class="p-field p-grid">

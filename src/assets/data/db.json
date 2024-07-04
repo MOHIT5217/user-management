@@ -43,7 +43,7 @@
       "phone": "1-463-123-4447",
       "website": "ramiro.info",
       "company": {
-        "name": "Romaguera-Jacobson",
+        "name": "Romaguera-Jasdacobson",
         "catchPhrase": "Face to face bifurcated interface",
         "bs": "e-enable strategic applications"
       }
@@ -193,27 +193,27 @@
       }
     },
     {
-      "id": "dfd5",
+      "id": "3b08",
       "name": "Alex",
-      "username": "Alex123",
       "thumbImg": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFrZSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D",
-      "email": "alex@email.com",
+      "username": "alex@123",
+      "email": "alex@gmail.com",
       "address": {
-        "street": "street1",
-        "suite": "unknow",
-        "city": "London",
-        "zipcode": "23434",
+        "street": "steet 1",
+        "suite": "street 2",
+        "city": "london",
+        "zipcode": "234322",
         "geo": {
-          "lat": "23323",
-          "lng": "434343"
+          "lat": "2323",
+          "lng": "23234"
         }
       },
-      "phone": "232343243",
+      "phone": "23424324",
       "website": "http://test.com",
       "company": {
-        "name": "Own",
-        "catchPhrase": "tesr",
-        "bs": "dsfsf"
+        "name": "any ",
+        "catchPhrase": "any",
+        "bs": "any"
       }
     }
   ]

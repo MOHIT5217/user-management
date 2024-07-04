@@ -10,8 +10,6 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CardComponent } from './card/card.component';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 import { ConfirmationService, MessageService } from 'primeng/api';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -27,9 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
     MenubarModule,
     InputTextModule,
     CardModule,
-    ConfirmDialogModule,
-    MatSnackBarModule,
-    MatButtonModule
+    ConfirmDialogModule
   ],
   exports:[
     HeaderComponent,
